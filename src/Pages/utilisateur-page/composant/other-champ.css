@@ -1,0 +1,7 @@
+.OtherChamp__layout{
+    display: flex;
+    flex-direction: row;
+}
+.OtherChamp__layout > img{
+    max-height: 100%;
+}

@@ -1,0 +1,9 @@
+.ScndChamp__layout{
+    display: flex;
+    flex-direction: row;
+   
+}
+.ScndChamp__layout > img{
+    height: 100%;
+    border-radius: 50px;
+}

@@ -1,0 +1,8 @@
+.mainChamp__layout{
+    display: block;
+    flex-direction: row;
+}
+.mainChamp__layout > img{
+    max-height: 100%;
+    margin-left: 100%;
+}
