@@ -1,9 +1,10 @@
 .BanChamp__layout{
     display: flex;
     flex-direction: column;
-    min-width: 33.33%;
-    flex-grow : 1;
+    min-height: 33.33%; 
+    max-width: 100px;
 }
 .BanChamp__layout > img{
+    max-height: 100%;
 
 }

@@ -1,5 +1,5 @@
 .mainChamp__layout{
-    display: block;
+    display: flex;
     flex-direction: row;
 }
 .mainChamp__layout > img{

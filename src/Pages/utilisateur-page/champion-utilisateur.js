@@ -11,9 +11,9 @@ class ChampionUtilisateur extends Component{
         pseudoUtilisateur: 'DumbleDodge',
         posteUtilisateur: 'Jungle',
         mainChampUtilisateur: 'Bard',
-        sncdChampUtilisateur: ['Brand','Olaf','Sejuani','Lillia'],
+        sncdChampUtilisateur: ['+', '+', '+', '+'],
         otherChampUtilisateur:['Graves', 'Hecarim', 'Kindred', 'Trundle'],
-        banChampUtilisateur:['Morgana','Nidalee','Khazix']
+        banChampUtilisateur:['Morgana','Annie', 'Leona']
     };
     render(){
         return (
