@@ -27,8 +27,22 @@ function ChampList() {
       });
     }
   });
+
   console.log("CTA before return", stateStringChamp);
-  const champFilter = stateImageChamp.filter((filterName) => filterName.toLowerCase().includes(stateStringChamp));
+
+  let champFilter = stateImageChamp.map((filterName) => {
+    let objetTableau = {
+      name: filterName,
+      isVisible: false,
+    };
+    return objetTableau;
+  });
+
+  champFilter = champFilter.map((objetChamp) => {
+    objetChamp.isVisible = objetChamp.name.toLowerCase().includes(stateStringChamp);
+    return objetChamp;
+  });
+  console.log(champFilter);
   return (
     <div className="componentChampionList">
       <div className="zoneTexte">
@@ -36,7 +50,11 @@ function ChampList() {
       </div>
       <div className="listeChampion">
         {champFilter.map((champion) => (
-          <img key={champion} src={`http://ddragon.leagueoflegends.com/cdn/11.4.1/img/champion/${champion}.png`} />
+          <img
+            className={champion.isVisible ? "imageChampion" : "championHide"}
+            key={champion.name}
+            src={`http://ddragon.leagueoflegends.com/cdn/11.4.1/img/champion/${champion.name}.png`}
+          />
         ))}
       </div>
     </div>
